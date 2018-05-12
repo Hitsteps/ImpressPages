@@ -37,19 +37,12 @@ class AdminController
             // Success
 
             $apicode = ipRequest()->getPost('apicode');
-            $floatingchat = ipRequest()->getPost('floatingchat');
-            $floatingchatpos = ipRequest()->getPost('floatingchatpos');
-            $chatlang = ipRequest()->getPost('chatlang');
+
 
             
                 ipRemoveOption('Hitsteps.apicode');
                 ipSetOption('Hitsteps.apicode', $apicode);
-                ipRemoveOption('Hitsteps.floatingchat');
-                ipSetOption('Hitsteps.floatingchat', $floatingchat);
-                ipRemoveOption('Hitsteps.floatingchatpos');
-                ipSetOption('Hitsteps.floatingchatpos', $floatingchatpos);
-                ipRemoveOption('Hitsteps.chatlang');
-                ipSetOption('Hitsteps.chatlang', $chatlang);
+
 
 
            $actionUrl = ipActionUrl(array('aa' => 'Hitsteps.index'));

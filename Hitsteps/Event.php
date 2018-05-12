@@ -115,24 +115,7 @@ htssc.parentNode.insertBefore(hstc, htssc);
 			
 			");
 			
-			
-				if (round(ipGetOption('Hitsteps.floatingchat'))>0){
-				
-				$position='';
-				if (ipGetOption('Hitsteps.floatingchatpos')){$position="&pos=".ipGetOption('Hitsteps.floatingchatpos');}
-				
-							ipAddJsContent('Hitsteps_floatingchat',"
-			(function(){
-var hstc=document.createElement('script');
-var hstcs='www.';
-hstc.src='//hitsteps.com/onlinefloat.php?code=".substr($manual_apicode,0,32).$langstr.$position."';
-hstc.async=true;
-var htssc = document.getElementsByTagName('script')[0];
-htssc.parentNode.insertBefore(hstc, htssc);
-})();
-			
-			");
-				}
+		
 			
 			}
 
@@ -145,7 +128,7 @@ htssc.parentNode.insertBefore(hstc, htssc);
 			if ($manual_apicode!=''){
 			
 			$langstr='';
-			if (ipGetOption('Hitsteps.chatlang')==''&&ipGetOption('Hitsteps.chatlang')!='auto') $langstr="&lang=".ipGetOption('Hitsteps.chatlang');
+
 			
 			
 $pageURL="";	
